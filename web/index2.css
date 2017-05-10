@@ -1,0 +1,9 @@
+body{
+  background: url("ht.gif");
+}
+h1{
+  font-size: 3em;
+  text-align: center;
+  color: #00ff00;
+  font-family: helvetica;
+}

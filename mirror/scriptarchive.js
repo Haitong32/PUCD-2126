@@ -1,0 +1,21 @@
+$(document).ready(function(){
+  $(document).ready(function(){
+    $(".ullevel1").hide();
+    $(".ullevel2").hide();
+    $("#archive").hover(function(){
+      $(".ullevel1").show();
+      $("#lilevel1-1").hover(function(){
+        $("#ullevel2-1").show();
+        $("#ullevel2-2").hide();
+        });
+      $("#lilevel1-2").hover(function(){
+        $("#ullevel2-1").hide();
+        $("#ullevel2-2").show();
+    });
+});
+$("#archive").live("mouseleave", function () {
+    $(".ullevel1").hide();
+    $(".ullevel2").hide();
+});
+});
+});

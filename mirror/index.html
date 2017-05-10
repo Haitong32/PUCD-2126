@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+ <div class="col-12 topbar">
+    <img class="col-4" id="mirror" src="MIRROR.png"/>
+    <a href="https://www.instagram.com/_mirror_magazine/">
+      <img class="col-1" id="insta" alt="INSTAGRAM" src="Instagram-icon.png">
+    </a>
+   <div class="button col-5 col-t-1">
+    <ul id="ul1">
+      <li id="today" onclick="location.href='today.html';"  style="cursor:pointer;">TODAY</li>
+      <li id="archive" onclick="location.href='today.html';"  style="cursor:pointer;">ARCHIVE</li>
+      <li id="about" onclick="location.href='about.html';"  style="cursor:pointer;">ABOUT</li>
+      <li onclick="location.href='contact.html';"  style="cursor:pointer;">CONTACT</li>
+    </ul>
+   </div>
+ </div>
+
+ <div class="hero col-12">
+  <div class="title">
+   <h1 class="col-8">A State of Originality, of the Youth</h1>
+   <h2 class="col-8">:the Story of MiRROR Magazine:</h2>
+  </div>
+ </div>
+
+<div class="read">
+ <div class="meta col-12 col-t-1">
+  <ul>
+    <li id="metali1">Written by Marc Bain</li>
+    <li>Edited by Haitong Zheng</li>
+    <li>March. 11. 2017</li>
+  </ul>
+ </div>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+ <div class="addthis_inline_share_toolbox"></div>
+
+ <div id="p1"class="text content col-7 col-t-8">
+  <p>
+    Well it all started after I found out one of my favourite magazines of all time got shut down…<br>
+    To hear photographer Shoichi Aoki describe it, what killed Tokyo’s famous Harajuku style was basically what happens when a glut of factories set up shop at the head of a river that feeds vital waterways.
+    “In Tokyo there is a kind of flow of energy when it comes to fashion,” Aoki explains. “Harajuku is the source of this flow. If you picture it as the source of a river, then recently there have been factories erected on its banks, and businesses have appeared, but they have stressed the limits of this little fountainhead.”
+  </p>
+ </div>
+
+<div class="col-12 gallery">
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+      <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+      <script src="js/jssor.slider-23.0.0.mini.js" type="text/javascript"></script>
+      <script type="text/javascript">
+          jQuery(document).ready(function ($) {
+
+              var jssor_1_SlideoTransitions = [
+                [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+                [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+                [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+                [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+                [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+                [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+                [{b:10000,d:2000,x:-379,e:{x:7}}],
+                [{b:10000,d:2000,x:-379,e:{x:7}}],
+                [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+              ];
+
+              var jssor_1_options = {
+                $AutoPlay: 1,
+                $SlideDuration: 1000,
+                $SlideEasing: $Jease$.$OutQuint,
+                $CaptionSliderOptions: {
+                  $Class: $JssorCaptionSlideo$,
+                  $Transitions: jssor_1_SlideoTransitions
+                },
+                $ArrowNavigatorOptions: {
+                  $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                  $Class: $JssorBulletNavigator$
+                }
+              };
+
+              var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+              /*responsive code begin*/
+              /*remove responsive code if you don't want the slider scales while window resizing*/
+              function ScaleSlider() {
+                  var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                  if (refSize) {
+                      refSize = Math.min(refSize, 1920);
+                      jssor_1_slider.$ScaleWidth(refSize);
+                  }
+                  else {
+                      window.setTimeout(ScaleSlider, 30);
+                  }
+              }
+              ScaleSlider();
+              $(window).bind("load", ScaleSlider);
+              $(window).bind("resize", ScaleSlider);
+              $(window).bind("orientationchange", ScaleSlider);
+              /*responsive code end*/
+          });
+      </script>
+      <style>
+          /* jssor slider bullet navigator skin 05 css */
+          /*
+          .jssorb05 div           (normal)
+          .jssorb05 div:hover     (normal mouseover)
+          .jssorb05 .av           (active)
+          .jssorb05 .av:hover     (active mouseover)
+          .jssorb05 .dn           (mousedown)
+          */
+          .jssorb05 {
+              position: absolute;
+          }
+          .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+              position: absolute;
+              /* size of bullet elment */
+              width: 16px;
+              height: 16px;
+              background: url('img/b05.png') no-repeat;
+              overflow: hidden;
+              cursor: pointer;
+          }
+          .jssorb05 div { background-position: -7px -7px; }
+          .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+          .jssorb05 .av { background-position: -67px -7px; }
+          .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+          /* jssor slider arrow navigator skin 22 css */
+          /*
+          .jssora22l                  (normal)
+          .jssora22r                  (normal)
+          .jssora22l:hover            (normal mouseover)
+          .jssora22r:hover            (normal mouseover)
+          .jssora22l.jssora22ldn      (mousedown)
+          .jssora22r.jssora22rdn      (mousedown)
+          */
+          .jssora22l, .jssora22r {
+              display: block;
+              position: absolute;
+              /* size of arrow element */
+              width: 40px;
+              height: 58px;
+              cursor: pointer;
+              background: url('img/a22.png') center center no-repeat;
+              overflow: hidden;
+          }
+          .jssora22l { background-position: -10px -31px; }
+          .jssora22r { background-position: -70px -31px; }
+          .jssora22l:hover { background-position: -130px -31px; }
+          .jssora22r:hover { background-position: -190px -31px; }
+          .jssora22l.jssora22ldn { background-position: -250px -31px; }
+          .jssora22r.jssora22rdn { background-position: -310px -31px; }
+      </style>
+      <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:700px;overflow:hidden;visibility:hidden;">
+          <!-- Loading Screen -->
+          <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+              <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+          </div>
+          <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:700px;overflow:hidden;">
+              <div>
+                  <img data-u="image" src="img/insert1.jpg" />
+                  <div data-u="caption" data-t="0" style="position:absolute;top:100px;left:600px;width:445px;height:300px;z-index:0;">
+                  </div>
+                  <div data-u="caption" data-t="5" style="position:absolute;top:120px;left:650px;width:470px;height:220px;z-index:0;">
+                      <div style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0; overflow:hidden;">
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <img data-u="image" src="img/insert2.jpg" />
+              </div>
+              <div>
+                  <img data-u="image" src="img/insert3.jpg" />
+              </div>
+          </div>
+          <!-- Bullet Navigator -->
+          <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+              <!-- bullet navigator item prototype -->
+              <div data-u="prototype" style="width:16px;height:16px;"></div>
+          </div>
+          <!-- Arrow Navigator -->
+          <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+          <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+      </div>
+      <!-- #endregion Jssor Slider End -->
+  </body>
+  </html>
+</div>
+<div class="meta2 col-3 col-t-1">
+  <ul>
+    <li>All Photos Credit to <a id="fruitslink" href="https://www.instagram.com/fruitsmag/?hl=en">FRUiTS Magazine</a></li>
+  </ul>
+</div>
+<div id="p2" class="text content col-7 col-t-8">
+  <p>
+    For 20 years, Aoki’s magazine FRUiTS was known for street-style photography documenting the wild creativity of the fashionable kids in and around Harajuku, a Tokyo neighborhood of about a square mile that has wielded an outsize influence on fashion in Japan and beyond.
+    In the 1990s, the area was the epicenter of a new look that came to symbolize the uninhibited essence of Japan’s fashion-forward youth culture. An eclectic, unruly overload of influences, sometimes colorful as a pinwheel, exaggerated and accessorized to cartoonish effect, Harajuku style has come to represent Japanese fashion—and indeed Japan—to much of the rest of the globe.
+    But Harajuku has changed. That frenetic signature image has been co-opted and commercialized by corporations, celebrities, and attention-seekers, and ultimately replaced by one more conservative and less unique among Tokyo’s style-conscious kids. These days, they’re more likely to wear mass-market clothing from Uniqlo and other international clothing chains.
+  </p></div>
+
+<blockquote class="content col-8">“Aoki says there are no longer enough fashionable people who fit the look to put out a magazine every month, and so he’s shuttering FRUiTS, marking the end of an era.”</blockquote>
+
+<div id="p3" class="text content col-7 col-t-8">
+  <p>
+    Depending how you define it, that era may have actually ended some time ago.
+  </p></div>
+</div>
+  <!-- <div class="grid-base">
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+          </div> -->
+         <!-- Go to www.addthis.com/dashboard to customize your tools -->
+         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58dd4722e5d889fd"></script>
+
+
+</body>
+</html>

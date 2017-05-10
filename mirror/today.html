@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script2.js"></script>
+  <link rel="stylesheet" href="style1.css">
+  <meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+  <div class="col-12 topbar">
+    <img class="col-4" id="mirror" src="MIRROR.png"/>
+    <a href="https://www.instagram.com/_mirror_magazine/">
+      <img class="col-1" id="insta" alt="INSTAGRAM" src="Instagram-icon.png">
+    </a>
+   <div class="button col-5 col-t-1">
+    <ul id="ul1">
+      <li id="today" onclick="location.href='today.html';"  style="cursor:pointer;">TODAY</li>
+      <li id="archive" onclick="location.href='archive.html';"  style="cursor:pointer;">ARCHIVE</li>
+      <li id="about" onclick="location.href='index.html';"  style="cursor:pointer;">ABOUT</li>
+      <li id="contact" onclick="location.href='contact.html';"  style="cursor:pointer;">CONTACT</li>
+    </ul>
+   </div>
+  </div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+<div class="col-4 gallery">
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+      <!-- #region Jssor Slider Begin -->
+      <!-- Generator: Jssor Slider Maker -->
+      <!-- Source: http://www.jssor.com -->
+      <!-- This code works with jquery library. -->
+      <script src="js1/jquery-1.11.3.min.js" type="text/javascript"></script>
+      <script src="js1/jssor.slider-23.0.0.mini.js" type="text/javascript"></script>
+      <script type="text/javascript">
+          jQuery(document).ready(function ($) {
+
+              var jssor_1_SlideoTransitions = [
+                [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+                [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+                [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+                [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+                [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+                [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+                [{b:10000,d:2000,x:-379,e:{x:7}}],
+                [{b:10000,d:2000,x:-379,e:{x:7}}],
+                [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+              ];
+
+              var jssor_1_options = {
+                $CaptionSliderOptions: {
+                  $Class: $JssorCaptionSlideo$,
+                  $Transitions: jssor_1_SlideoTransitions
+                },
+                $ArrowNavigatorOptions: {
+                  $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                  $Class: $JssorBulletNavigator$
+                }
+              };
+
+              var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+              /*responsive code begin*/
+              /*remove responsive code if you don't want the slider scales while window resizing*/
+              // function ScaleSlider() {
+              //     var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+              //     if (refSize) {
+              //         refSize = Math.min(refSize, 1920);
+              //         jssor_1_slider.$ScaleWidth(refSize);
+              //     }
+              //     else {
+              //         window.setTimeout(ScaleSlider, 30);
+              //     }
+              // }
+              // ScaleSlider();
+              // $(window).bind("load", ScaleSlider);
+              // $(window).bind("resize", ScaleSlider);
+              // $(window).bind("orientationchange", ScaleSlider);
+              /*responsive code end*/
+          });
+      </script>
+      <style>
+
+          /* jssor slider arrow navigator skin 22 css */
+          /*
+          .jssora22l                  (normal)
+          .jssora22r                  (normal)
+          .jssora22l:hover            (normal mouseover)
+          .jssora22r:hover            (normal mouseover)
+          .jssora22l.jssora22ldn      (mousedown)
+          .jssora22r.jssora22rdn      (mousedown)
+          */
+          .jssora22l, .jssora22r {
+              display: block;
+              position: absolute;
+              /* size of arrow element */
+              width: 600px;
+              height: 600px;
+              cursor: pointer;
+              background: url('img/a221.png') no-repeat;
+              overflow: hidden;
+          }
+          .jssora22l { background-position: -10px -15px; }
+          .jssora22r { background-position: -70px -15px; }
+          .jssora22l:hover { background-position: -130px -15px; }
+          .jssora22r:hover { background-position: -190px -15px; }
+          .jssora22l.jssora22ldn { background-position: -250px -15px; }
+          .jssora22r.jssora22rdn { background-position: -310px -15px; }
+      </style>
+      <div id="jssor_1" style="position:relative;margin:0;top:0px;left:0px;width:350px;height:350px;overflow:hidden;visibility:hidden;">
+          <div data-u="slides" style="cursor:default;position:relative;margin-left:85px;top:0px;left:0px;width:200px;height:280px;overflow:hidden;">
+              <div>
+                  <img class="frame1" data-u="image" src="img1/today1.jpg" />
+                  <div data-u="caption" data-t="0" style="position:absolute;top:100px;left:600px;width:445px;height:300px;z-index:0;">
+                  </div>
+                  <div data-u="caption" data-t="5" style="position:absolute;top:120px;left:650px;width:470px;height:220px;z-index:0;">
+                      <!-- <div style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0; overflow:hidden;">
+                      </div> -->
+                  </div>
+              </div>
+              <div>
+                  <img class="frame2" data-u="image" src="img1/today2.jpg" />
+              </div>
+          </div>
+          <!-- Arrow Navigator -->
+          <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:60px;height:120px;" data-autocenter="2"></span>
+          <span data-u="arrowright" class="jssora22r" style="top:0px;right:5px;width:60px;height:120px;" data-autocenter="2"></span>
+      </div>
+      <!-- #endregion Jssor Slider End -->
+  </body>
+  </html>
+</div>
+<div class="date col-2">
+  <h1>2017/<br>03/<br>16</h1>
+</div>
+
+<div id="review1" class="review content col-3 col-t-4">
+  <p>
+    Slogan T-shirt is obviously one of the top choices this summer.
+    <br>Transparent sunscreem cap add playfulness to the whole ourfit.
+    <br>Baggy pants in baby blue
+  </p></div>
+
+<div id="review2" class="review content col-3 col-t-4">
+    <p>
+      Skate Boy Look comes back again while the Russian sports fashion became a great hit this season.
+      <br>Classic Vans high-anke black sneakers with loose rolled-up jeans.
+      <br>Cap with small icon in the middle.
+    </p></div>
+
+  <!--<div class="grid-base">
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+          </div>-->
+         <!-- Go to www.addthis.com/dashboard to customize your tools -->
+         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58dd4722e5d889fd"></script>
+
+
+</body>
+</html>

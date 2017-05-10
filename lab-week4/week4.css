@@ -1,0 +1,192 @@
+/* A single line comment */
+
+/*
+  A comment
+  which stretches
+  over several
+  lines
+*/
+
+/* basic selectors
+  - Element names
+  - Class
+  - id
+  - universal selectors
+  - attribute selectors
+*/
+body{
+  background: url("flower2.gif");
+}
+* {
+  margin: 10px;
+  padding: 0px;
+}
+#first{
+  font-size: 2em;
+  font-weight: bold;
+  background-color: white;
+}
+
+h1{
+  font-family: times;
+  color:white;
+  font-size: 10em;
+  text-shadow: 3px 5px  purple;
+  border-style: dotted;
+  border-color: pink;
+}
+
+#second {
+  margin-top: 60px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: #ff00ea ;
+  font-family: times;
+  font-size: 5px;
+}
+#third {
+  margin-top: 60px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: #ff24ed ;
+  font-family: times;
+  font-size: 5px;
+}
+#forth {
+  margin-top: 60px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: #ff4bf0 ;
+  font-family: times;
+  font-size: 5px;
+}
+#fifth {
+  margin-top: 60px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: #ff6ef3 ;
+  font-family: times;
+  font-size: 5px;
+}
+#sixth {
+  margin-top: 60px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: #fe94f5 ;
+  font-family: times;
+  font-size: 5px;
+}
+
+
+#sixth:hover{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size:2em;
+  background-color: white;
+}
+
+#fifth:hover{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size:2em;
+  background-color: white;
+}
+#forth:hover{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size:2em;
+  background-color: white;
+}
+ #third:hover{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size:2em;
+  background-color: white;
+}
+#second:hover{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size:2em;
+  background-color: white;
+}
+/*[type="text"] {
+  border: 2px green dashed;
+}*/
+
+/*#container {
+  border-color: pink;
+}*/
+
+/*.tertiary-heading {
+  font-family: Arial;
+}*/
+
+#container {
+  text-align: center;
+}
+
+/*
+  combinators
+  - adjacent sibling selector ( + )
+  - general sibling ( ~ )
+  - child ( > )
+  - descendant selector (  )
+*/
+p + p {
+  font-style: italic;
+}
+
+/*#foo ~ span {
+  background-color: black;
+  color: white;
+}*/
+
+/*#container > p > span {
+}
+
+#container span {
+  font-family: fantasy;
+}*/
+
+/*
+  pseudo-elements
+  ::after
+  ::before
+  ::first-letter
+  ::first-line
+  ::selection
+  ::backdrop
+*/
+/*h1:after {
+  content: '#';
+  color: black;
+  margin-left: 5px;
+}*/
+
+h1:first-letter {
+  text-transform: uppercase;
+}
+
+/*h1:before {
+  content: '#';
+  color: black;
+  margin-right: 5px;
+}*/
+
+/*
+  puseudo-classes
+*/
+/*h1:hover{
+  color: white;
+}*/
+/*p:hover {
+  color: white;
+  background-color: purple;
+}
+
+p:active {
+  margin:10px;
+}*/
+/*#first:hover{
+  font-size: 100px;
+}*/
